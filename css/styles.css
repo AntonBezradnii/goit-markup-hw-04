@@ -110,9 +110,8 @@ img{
     gap: 40px;
     
 }
-.phonesvg {
-    fill: red;
-}
+
+
 .contactlink {
     
     font-weight: 400;
@@ -131,7 +130,9 @@ img{
 }
 
 .section-hero {
-    background-image: linear-gradient(to right, RGBA(46,47,66,0.7), RGBA(46,47,66,0.7)), url(/images/peopleoffice1.jpg);
+    background-image: linear-gradient(to right, RGBA(46,47,66,0.7), 
+    RGBA(46,47,66,0.7)), 
+    url(/images/peopleoffice1.jpg);
     margin: 0 auto;
     max-width: 1440px;
     background-size:auto;
