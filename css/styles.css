@@ -110,6 +110,9 @@ img{
     gap: 40px;
     
 }
+.phonesvg {
+    fill: red;
+}
 .contactlink {
     
     font-weight: 400;
@@ -126,8 +129,14 @@ img{
     letter-spacing: 0.02em;
     color: var(--iris);
 }
+
 .section-hero {
-    background: var(--navy-blue);
+    background-image: linear-gradient(to right, RGBA(46,47,66,0.7), RGBA(46,47,66,0.7)), url(/images/peopleoffice1.jpg);
+    margin: 0 auto;
+    max-width: 1440px;
+    background-size:auto;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;            
     padding-top: 192px;
     padding-bottom: 192px;
 }
@@ -146,8 +155,7 @@ img{
     letter-spacing: 0.02em;
     color: #FFFFFF;
 }
-.midbutton {
-    
+.midbutton {   
     align-items: center;
     font-family: 'Roboto';
     width: 170px;
@@ -164,10 +172,7 @@ img{
     cursor: pointer;
     border-color: transparent;
 }
-.midbutton:hover, .midbutton:focus {
-    background: var(--iris);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    cursor: pointer;
+.midbutton:hover, .midbutton:focus {   
     background: #404BBF;
 }
 .section {
@@ -180,6 +185,17 @@ img{
 .info-item {
     width: 264px;
 }
+.info-item-svg {
+    background-color: var(--cloud);
+    width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    margin-bottom: 8px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .info-item-title {
     margin-bottom: 8px;
     font-weight: 600;
@@ -255,7 +271,7 @@ img{
     color: var(--navy-blue);
 }
 .teamprofession {
-    margin-bottom: 32px;
+    margin-bottom: 12px;
     margin-top: 8px;
     text-align: center;
     letter-spacing: 0.02em;
@@ -265,13 +281,73 @@ img{
     letter-spacing: 0.02em;
     color: var(--slate);
 }
-
+.contact-icon-container{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--iris);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.contact-icon-container:hover {
+    background-color: var(--green);
+}
+.team-contact-icon-list {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 36px;
+}
+.team-contact-icon-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.section-customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.customers-header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--navy-blue);
+    margin-bottom: 72px;
+}
+.customers-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.customers-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--light-slate);
+    border-radius: 4px;
+    width: 168px;
+    height: 88px;
+    cursor: pointer;
+    fill: #8E8F99;;
+}
+.customers-item:hover,
+.customers-item:focus {
+    fill: var(--iris);
+    border-color: var(--iris);
+}
 
 .footer {
     background: var(--navy-blue);      
     padding-top:100px ;
     padding-bottom:100px ; 
 }    
+.container-footer {
+    display: flex;
+}
 
 .footertext {
     margin-top: 16px;
@@ -283,6 +359,37 @@ img{
     color: var(--cornflower);
 
 }
+.footer-info-2 {
+   margin-left: 120px; 
+}
+.footer-contact-list {
+    display: flex;
+    gap: 16px;
+}
+.footer-contact-container {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.footer-contact-container:hover,
+.footer-contact-container:focus {
+    background-color:var(--green);
+}
+.footer-header {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
 .sitelinkfooter {
     font-family: 'Raleway', sans-serif;;
     font-style: normal;
@@ -370,11 +477,15 @@ img{
 }
 .workshop-text-container {
     border: 0.5px solid #F4F4FD;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+    border-top: none;
     padding: 32px 16px;
+    
+}
+.workshop-item:hover .workshop-text-container:hover {
+    
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
     border-top: none;
 }
-
 
 .studiotitle {
     font-weight: 600;
