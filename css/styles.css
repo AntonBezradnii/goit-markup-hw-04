@@ -132,7 +132,7 @@ img{
 .section-hero {
     background-image: linear-gradient(to right, RGBA(46,47,66,0.7), 
     RGBA(46,47,66,0.7)), 
-    url(/images/peopleoffice1.jpg);
+    url(../images/peopleoffice1.jpg);
     margin: 0 auto;
     max-width: 1440px;
     background-size:auto;
@@ -328,15 +328,23 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+.customers-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid var(--light-slate);
     border-radius: 4px;
     width: 168px;
     height: 88px;
     cursor: pointer;
-    fill: #8E8F99;;
+    fill: #8E8F99;
 }
-.customers-item:hover,
-.customers-item:focus {
+
+
+.customers-link:hover,
+.customers-link:focus{
     fill: var(--iris);
     border-color: var(--iris);
 }
@@ -468,6 +476,10 @@ img{
     margin-bottom: 48px;
     margin-right: 24px;
 }
+.workshop-item:hover {
+    
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
 .workshop-item:nth-child(3n + 3) {
     margin-right: 0;
     
@@ -481,11 +493,6 @@ img{
     border-top: none;
     padding: 32px 16px;
     
-}
-.workshop-item:hover .workshop-text-container:hover {
-    
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-    border-top: none;
 }
 
 .studiotitle {
